@@ -1,0 +1,11 @@
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\bin\Debug\Shops.Provider.dll.config
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\bin\Debug\Shops.Provider.dll
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\bin\Debug\Shops.Provider.pdb
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\bin\Debug\EntityFramework.dll
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\bin\Debug\EntityFramework.SqlServer.dll
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\bin\Debug\EntityFramework.xml
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\bin\Debug\EntityFramework.SqlServer.xml
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\obj\Debug\Shops.Provider.dll
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\obj\Debug\Shops.Provider.pdb
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\obj\Debug\Shops.Provider.Migrations.initial.resources
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\obj\Debug\Shops.Provider.csproj.GenerateResource.Cache

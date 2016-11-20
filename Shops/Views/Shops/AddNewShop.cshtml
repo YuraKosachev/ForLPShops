@@ -1,0 +1,57 @@
+﻿@model Shops.Models.CreateShopViewModel
+
+@{
+    ViewBag.Title = "AddNewShop";
+}
+
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <h2>Add new shop</h2>
+        <hr />
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            <div class="form-group ">
+                
+                @Html.LabelFor(model => model.ShopName)
+                @Html.TextBoxFor(model => model.ShopName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ShopName)
+                    
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.ShopAddress)
+                @Html.TextBoxFor(model => model.ShopAddress, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.ShopAddress)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.ShopOpeningTime)
+                <div class="input-group date" >
+                    @Html.TextBoxFor(model => model.ShopOpeningTime, new { @class = "form-control" })
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+                @Html.ValidationMessageFor(model => model.ShopOpeningTime)
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.ShopClosingTime)
+                <div class='input-group date'>
+                    @Html.TextBoxFor(model => model.ShopClosingTime, new { @class = "form-control" })
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                </div>
+                @Html.ValidationMessageFor(model => model.ShopClosingTime)
+            </div>
+            <button type="submit" class="btn btn-primary right">Create</button>
+
+
+        }
+
+        <div>
+            @Html.ActionLink("Back to List", "Index", "Home")
+        </div>
+    </div>
+</div>
+

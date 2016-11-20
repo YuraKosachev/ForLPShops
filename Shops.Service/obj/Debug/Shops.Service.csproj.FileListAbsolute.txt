@@ -1,0 +1,11 @@
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\obj\Debug\Shops.Service.csprojResolveAssemblyReference.cache
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\bin\Debug\Shops.Service.dll
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\bin\Debug\Shops.Service.pdb
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\bin\Debug\AutoMapper.dll
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\bin\Debug\Shops.Provider.dll
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\bin\Debug\EntityFramework.dll
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\bin\Debug\Shops.Provider.pdb
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\bin\Debug\AutoMapper.xml
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\bin\Debug\EntityFramework.xml
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\obj\Debug\Shops.Service.dll
+E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\obj\Debug\Shops.Service.pdb
