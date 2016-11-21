@@ -18,7 +18,7 @@ namespace Shops.Service.Services
                 ProductId = model.ProductId,
                 ProductDescription = model.ProductDescription,
                 ProductName = model.ProductName,
-                ShopId = model.ProductId
+                ShopId = model.ShopId
             };
             Provider.ProductsProvider.Create(Mapper.Map<Product>(model));
         }
