@@ -14,13 +14,14 @@ namespace Shops.Service.Services
 
         public void Create(ProductServiceModel model)
         {
-            var providerModel = new Product {
+            var providerModel = new Product
+            {
                 ProductId = model.ProductId,
                 ProductDescription = model.ProductDescription,
                 ProductName = model.ProductName,
                 ShopId = model.ShopId
             };
-            Provider.ProductsProvider.Create(Mapper.Map<Product>(model));
+            Provider.ProductsProvider.Create(providerModel);
         }
 
         public void Delete(ProductServiceModel model)
@@ -30,7 +31,8 @@ namespace Shops.Service.Services
 
         public IEnumerable<ProductServiceModel> GetAll()
         {
-            return Provider.ProductsProvider.GetAll().Select(product => new ProductServiceModel {
+            return Provider.ProductsProvider.GetAll().Select(product => new ProductServiceModel
+            {
                 ProductId = product.ProductId,
                 ProductDescription = product.ProductDescription,
                 ProductName = product.ProductName,
@@ -42,7 +44,8 @@ namespace Shops.Service.Services
         {
 
             var item = Provider.ProductsProvider.GetItem(model.ProductId);
-            return new ProductServiceModel {
+            return new ProductServiceModel
+            {
                 ProductId = item.ProductId,
                 ProductDescription = item.ProductDescription,
                 ProductName = item.ProductName,
@@ -53,10 +56,13 @@ namespace Shops.Service.Services
         public IEnumerable<ProductServiceModel> GetShopProducts(ProductServiceModel model)
         {
             var modelProvider = new Product { ShopId = model.ShopId };
-            var list = Provider.ProductsProvider.GetShopProducts(modelProvider).Select(product => new ProductServiceModel {ProductId = product.ProductId,
-                                                                                                                            ShopId=product.ShopId,
-            ProductDescription = product.ProductDescription,
-            ProductName=product.ProductName});
+            var list = Provider.ProductsProvider.GetShopProducts(modelProvider).Select(product => new ProductServiceModel
+            {
+                ProductId = product.ProductId,
+                ShopId = product.ShopId,
+                ProductDescription = product.ProductDescription,
+                ProductName = product.ProductName
+            });
             return list;
         }
 
@@ -72,6 +78,6 @@ namespace Shops.Service.Services
             Provider.ProductsProvider.Update(providerModel);
         }
 
-      
+
     }
 }
