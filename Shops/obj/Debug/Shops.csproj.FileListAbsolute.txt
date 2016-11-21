@@ -61,3 +61,5 @@ E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops\bin\Sh
 E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops\bin\EntityFramework.xml
 E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops\bin\EntityFramework.SqlServer.dll
 E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops\bin\EntityFramework.SqlServer.xml
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops\obj\Debug\Shops.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops\obj\Debug\Shops.pdb

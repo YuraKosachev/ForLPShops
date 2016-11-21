@@ -9,3 +9,13 @@ E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Servic
 E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\bin\Debug\EntityFramework.xml
 E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\obj\Debug\Shops.Service.dll
 E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Service\obj\Debug\Shops.Service.pdb
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Service\bin\Debug\Shops.Service.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Service\bin\Debug\Shops.Service.pdb
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Service\bin\Debug\Shops.Provider.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Service\bin\Debug\EntityFramework.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Service\bin\Debug\Shops.Provider.pdb
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Service\bin\Debug\AutoMapper.xml
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Service\bin\Debug\EntityFramework.xml
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Service\obj\Debug\Shops.Service.csprojResolveAssemblyReference.cache
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Service\obj\Debug\Shops.Service.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Service\obj\Debug\Shops.Service.pdb

@@ -9,3 +9,15 @@ E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provid
 E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\obj\Debug\Shops.Provider.pdb
 E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\obj\Debug\Shops.Provider.Migrations.initial.resources
 E:\УЧЕБА\Тестовое задание Lightpoint\ver3\Shops\Shops.Provider\obj\Debug\Shops.Provider.csproj.GenerateResource.Cache
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Provider\bin\Debug\Shops.Provider.dll.config
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Provider\bin\Debug\Shops.Provider.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Provider\bin\Debug\Shops.Provider.pdb
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Provider\bin\Debug\EntityFramework.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Provider\bin\Debug\EntityFramework.SqlServer.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Provider\bin\Debug\EntityFramework.xml
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Provider\bin\Debug\EntityFramework.SqlServer.xml
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Provider\obj\Debug\Shops.Provider.csprojResolveAssemblyReference.cache
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Provider\obj\Debug\Shops.Provider.Migrations.initial.resources
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Provider\obj\Debug\Shops.Provider.csproj.GenerateResource.Cache
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Provider\obj\Debug\Shops.Provider.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\appHarbor\ForLPShops\Shops.Provider\obj\Debug\Shops.Provider.pdb
