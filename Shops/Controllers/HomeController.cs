@@ -9,7 +9,17 @@ using AutoMapper;
 
 namespace Shops.Controllers
 {
-   
+    public class HomeControllerMapperProfile : Profile
+    {
+        protected override void Configure()
+        {
+            CreateMap<ShopServiceModel, ShopViewModel>()
+               .ForMember(item => item.WorkingTime, exp => exp.MapFrom(src => String.Format("{0} - {1}", src.ShopOpeningTime, src.ShopClosingTime)));
+
+        }
+
+    }
+
     public class HomeController : AppController
     {
         //
@@ -17,16 +27,8 @@ namespace Shops.Controllers
         public HomeController() : base() { }
         public ActionResult Index()
         {
-
-            var list = Service.ShopService.GetAll()
-                .Select(shop => new ShopViewModel
-                {
-                    ShopAddress = shop.ShopAddress,
-                    ShopId = shop.ShopId,
-                    ShopName = shop.ShopName,
-                    WorkingTime = String.Format("{0} - {1}", shop.ShopOpeningTime, shop.ShopClosingTime)
-                });
-            return View(list);
+            var list = Service.ShopService.GetAll();
+            return View(Mapper.Map<IEnumerable<ShopViewModel>>(list));
         }
 
     }

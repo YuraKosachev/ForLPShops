@@ -11,6 +11,15 @@ using AutoMapper;
 
 namespace Shops.Service.Services
 {
+    public class ShopsServiceMapperProfile : Profile
+    {
+
+        protected override void Configure()
+        {
+            CreateMap<ShopServiceModel, Shop>().ReverseMap();
+        }
+
+    }
     public class ShopService : Service, IShopService
     {
         public ShopService() : base()
@@ -19,15 +28,8 @@ namespace Shops.Service.Services
         }
         public void Create(ShopServiceModel model)
         {
-            var providerModel = new Shop
-            {
-                ShopAddress = model.ShopAddress,
-                ShopClosingTime = model.ShopClosingTime,
-                ShopId = model.ShopId,
-                ShopName = model.ShopName,
-                ShopOpeningTime = model.ShopOpeningTime
-            };
-            Provider.ShopsProvider.Create(providerModel);
+           
+            Provider.ShopsProvider.Create(Mapper.Map<Shop>(model));
         }
 
         public void Delete(ShopServiceModel model)
@@ -37,28 +39,17 @@ namespace Shops.Service.Services
 
         public IEnumerable<ShopServiceModel> GetAll()
         {
-            return Provider.ShopsProvider.GetAll().Select(shop => new ShopServiceModel
-            {
-                ShopAddress = shop.ShopAddress,
-                ShopClosingTime = shop.ShopClosingTime,
-                ShopId = shop.ShopId,
-                ShopName = shop.ShopName,
-                ShopOpeningTime = shop.ShopOpeningTime
-            });
+            var list = Provider.ShopsProvider.GetAll();
+            return Mapper.Map<IEnumerable<ShopServiceModel>>(list);
+           
         }
 
         public ShopServiceModel GetItem(ShopServiceModel model)
         {
 
-            var item = Provider.ShopsProvider.GetItem(model.ShopId);
-            return new ShopServiceModel
-            {
-                ShopAddress = item.ShopAddress,
-                ShopClosingTime = item.ShopClosingTime,
-                ShopId = item.ShopId,
-                ShopName = item.ShopName,
-                ShopOpeningTime = item.ShopOpeningTime
-            }; 
+            var shop = Provider.ShopsProvider.GetItem(model.ShopId);
+            return Mapper.Map<ShopServiceModel>(shop);
+          
         }
 
         public IDictionary<int, string> GetShopsDictionary()
@@ -68,14 +59,9 @@ namespace Shops.Service.Services
 
         public void Update(ShopServiceModel model)
         {
-            Provider.ShopsProvider.Update(new Shop
-            {
-                ShopAddress = model.ShopAddress,
-                ShopClosingTime = model.ShopClosingTime,
-                ShopId = model.ShopId,
-                ShopName = model.ShopName,
-                ShopOpeningTime = model.ShopOpeningTime
-            } );
+
+            Provider.ShopsProvider.Update(Mapper.Map<Shop>(model));
+          
         }
 
      

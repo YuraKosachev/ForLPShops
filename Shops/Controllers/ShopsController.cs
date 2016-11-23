@@ -5,7 +5,17 @@ using Shops.Service.ServiceModel;
 
 namespace Shops.Controllers
 {
-   
+    public class ShopsControllerMapperProfile : Profile
+    {
+        protected override void Configure()
+        {
+            CreateMap<CreateShopViewModel, ShopServiceModel>()
+                .ForMember(item => item.ShopOpeningTime, exp => exp.MapFrom(x => x.ShopOpeningTime.TimeOfDay))
+                .ForMember(item => item.ShopClosingTime, exp => exp.MapFrom(x => x.ShopClosingTime.TimeOfDay));
+
+        }
+
+    }
 
     public class ShopsController : AppController
     {
@@ -22,21 +32,13 @@ namespace Shops.Controllers
         {
             if (ModelState.IsValid)
             {
-                var shop = new ShopServiceModel
-                {
-                    ShopAddress = model.ShopAddress,
-                    ShopClosingTime = model.ShopClosingTime.TimeOfDay,
-                    ShopOpeningTime = model.ShopOpeningTime.TimeOfDay,
-                    ShopId = model.ShopId,
-                    ShopName = model.ShopName
-                };
-                Service.ShopService.Create(shop);
+                Service.ShopService.Create(Mapper.Map<ShopServiceModel>(model));
                 return RedirectToAction("Index", "Home");
             }
 
             return View();
         }
 
-       
+
     }
 }

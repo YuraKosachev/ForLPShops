@@ -8,20 +8,23 @@ using AutoMapper;
 
 namespace Shops.Service.Services
 {
+    public class ProductsServiceMapperProfile : Profile
+    {
+
+        protected override void Configure()
+        {
+            CreateMap<ProductServiceModel, Product>().ReverseMap();
+        }
+
+    }
     public class ProductService : Service, IProductService
     {
         public ProductService() : base() { }
 
         public void Create(ProductServiceModel model)
         {
-            var providerModel = new Product
-            {
-                ProductId = model.ProductId,
-                ProductDescription = model.ProductDescription,
-                ProductName = model.ProductName,
-                ShopId = model.ShopId
-            };
-            Provider.ProductsProvider.Create(providerModel);
+          
+            Provider.ProductsProvider.Create(Mapper.Map<Product>(model));
         }
 
         public void Delete(ProductServiceModel model)
@@ -31,51 +34,31 @@ namespace Shops.Service.Services
 
         public IEnumerable<ProductServiceModel> GetAll()
         {
-            return Provider.ProductsProvider.GetAll().Select(product => new ProductServiceModel
-            {
-                ProductId = product.ProductId,
-                ProductDescription = product.ProductDescription,
-                ProductName = product.ProductName,
-                ShopId = product.ProductId
-            });
+            var list = Provider.ProductsProvider.GetAll();
+            return Mapper.Map<IEnumerable<ProductServiceModel>>(list);
+          
         }
 
         public ProductServiceModel GetItem(ProductServiceModel model)
         {
 
-            var item = Provider.ProductsProvider.GetItem(model.ProductId);
-            return new ProductServiceModel
-            {
-                ProductId = item.ProductId,
-                ProductDescription = item.ProductDescription,
-                ProductName = item.ProductName,
-                ShopId = item.ProductId
-            };
+            var product = Provider.ProductsProvider.GetItem(model.ProductId);
+            return Mapper.Map<ProductServiceModel>(product);
+         
         }
 
         public IEnumerable<ProductServiceModel> GetShopProducts(ProductServiceModel model)
         {
-            var modelProvider = new Product { ShopId = model.ShopId };
-            var list = Provider.ProductsProvider.GetShopProducts(modelProvider).Select(product => new ProductServiceModel
-            {
-                ProductId = product.ProductId,
-                ShopId = product.ShopId,
-                ProductDescription = product.ProductDescription,
-                ProductName = product.ProductName
-            });
-            return list;
+            var modelProvider = Mapper.Map<Product>(model);
+            var list = Provider.ProductsProvider.GetShopProducts(modelProvider);
+            
+            return Mapper.Map<IEnumerable<ProductServiceModel>>(list);
         }
 
         public void Update(ProductServiceModel model)
         {
-            var providerModel = new Product
-            {
-                ProductId = model.ProductId,
-                ProductDescription = model.ProductDescription,
-                ProductName = model.ProductName,
-                ShopId = model.ProductId
-            };
-            Provider.ProductsProvider.Update(providerModel);
+            
+            Provider.ProductsProvider.Update(Mapper.Map<Product>(model));
         }
 
 

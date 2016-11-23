@@ -8,7 +8,16 @@ using AutoMapper;
 using Shops.Service.ServiceModel;
 namespace Shops.Controllers
 {
-    
+    public class ProductsControllerMapperProfile : Profile
+    {
+
+        protected override void Configure()
+        {
+            CreateMap<ProductServiceModel, ProductViewModel>().ReverseMap();
+        }
+
+    }
+
     public class ProductsController : AppController
     {
         //
@@ -29,14 +38,7 @@ namespace Shops.Controllers
         {
             if (ModelState.IsValid)
             {
-                var providerModel = new ProductServiceModel
-                {
-                    ProductDescription = model.ProductDescription,
-                    ShopId = model.ShopId,
-                    ProductId = model.ProductId,
-                    ProductName = model.ProductName
-                };
-                Service.ProductService.Create(providerModel);
+                Service.ProductService.Create(Mapper.Map<ProductServiceModel>(model));
                 return RedirectToAction("Index", "Home");
             }
             return View();
@@ -45,15 +47,9 @@ namespace Shops.Controllers
         public ActionResult GetShopProducts(int id)
         {
             var list = Service.ProductService.GetShopProducts(new ProductServiceModel { ShopId = id });
-
-            return PartialView(list.Select(product => new ProductViewModel {
-                ProductId = product.ProductId,
-                ProductDescription = product.ProductDescription,
-                ProductName = product.ProductName,
-                ShopId = product.ShopId
-            }));
+            return PartialView(Mapper.Map<IEnumerable<ProductViewModel>>(list));
         }
 
-       
+
     }
 }
