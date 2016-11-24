@@ -41,3 +41,14 @@ D:\Новая папка\УЧЕБА\Тестовае задание от Lightpo
 D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\versus6 23.11.2016\ForLPShops\Shops.Service\obj\Debug\Shops.Service.csprojResolveAssemblyReference.cache
 D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\versus6 23.11.2016\ForLPShops\Shops.Service\obj\Debug\Shops.Service.dll
 D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\versus6 23.11.2016\ForLPShops\Shops.Service\obj\Debug\Shops.Service.pdb
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\Versus 8\ForLPShops\Shops.Service\bin\Debug\Shops.Service.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\Versus 8\ForLPShops\Shops.Service\bin\Debug\Shops.Service.pdb
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\Versus 8\ForLPShops\Shops.Service\bin\Debug\AutoMapper.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\Versus 8\ForLPShops\Shops.Service\bin\Debug\Shops.Provider.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\Versus 8\ForLPShops\Shops.Service\bin\Debug\EntityFramework.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\Versus 8\ForLPShops\Shops.Service\bin\Debug\Shops.Provider.pdb
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\Versus 8\ForLPShops\Shops.Service\bin\Debug\AutoMapper.xml
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\Versus 8\ForLPShops\Shops.Service\bin\Debug\EntityFramework.xml
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\Versus 8\ForLPShops\Shops.Service\obj\Debug\Shops.Service.csprojResolveAssemblyReference.cache
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\Versus 8\ForLPShops\Shops.Service\obj\Debug\Shops.Service.dll
+D:\Новая папка\УЧЕБА\Тестовае задание от Lightpoint\Versus 8\ForLPShops\Shops.Service\obj\Debug\Shops.Service.pdb
