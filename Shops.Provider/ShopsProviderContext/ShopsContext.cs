@@ -6,7 +6,7 @@ namespace Shops.Provider.ShopsProviderContext
 {
     public class ShopsContext : DbContext
     {
-        public ShopsContext() { }
+        public ShopsContext() { }//:base("ShopsContext") { }
         public DbSet<Shop> Shops { get; set; }
         public DbSet<Product> Products { get; set; }
     }
